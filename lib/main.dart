@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        surfaceTintColor: Colors.transparent,
         title: const Text(
           'Stock Barang',
           style: TextStyle(
@@ -166,7 +166,6 @@ class StockBarang extends StatelessWidget {
             keyboardType: TextInputType.number,
             decoration: const InputDecoration(
               labelText: 'Jumlah',
-              hintText: 'Masukkan jumlah barang',
             ),
             onChanged: (value) {
               newValue = int.tryParse(value) ?? newValue;
